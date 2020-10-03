@@ -1,0 +1,44 @@
+*
+#topic{
+    padding: 25px;
+    text-align: center;
+    background-color:#00FFFF;
+    color:#000000;
+    font-family: cursive;
+    font-size: 20px;
+    border: 2px solid rgb(37, 12, 95)
+  }
+
+  #empty{
+    padding: 5px;
+    border: 1px thin white;
+    background: white;
+    color: white;
+  }
+  #video{
+    margin:  0 auto;
+    text-align: center;
+    font-size: 25px;
+    color:#000000 ;
+    padding: 50px;
+    background-color:skyblue;
+    border: 2px solid rgb(37, 12, 95);
+
+  }
+
+  .btn{
+    background-color:dodgerblue;
+    border:5px solid #000000 ;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+
+  }
+  #but{
+    text-align: center;
+  }
+  .btn:hover{
+    background-color: royalblue;
+  }
