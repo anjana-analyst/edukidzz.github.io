@@ -107,6 +107,23 @@ label.star:before {
 }
 </style>
 <body>
+    <?php
+// define variables and set to empty values
+$name = $emailid = $comments = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $emailid = test_input($_POST["emailid"]);
+  $comments = test_input($_POST["comments"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
     
 <div id="view">
     <b>
@@ -123,7 +140,7 @@ label.star:before {
 <div id="frm">
     
         
-<form>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <label for="name">NAME</label>
     <input type="text" id="name"  placeholder="Enter your name"><br><br>
     <label for="mail">EMAIL ID</label>
@@ -160,7 +177,11 @@ label.star:before {
     <input type="button" id="submit"  value="SUBMIT" class="bt" >
 </div>
 
-
+<?php
+echo "<h2>THANK YOU!</h2>";
+echo $email;
+echo "<br>";
+?>
 
 
 
