@@ -1,4 +1,5 @@
-<html>
+
+    <html>
   <head>
     <title>CALC</title>
     <style>
@@ -33,9 +34,9 @@
     }
     input[type=reset]
     {
-      width:60px;
-      padding:20px;
-      font-size:24px;
+      width:40px;
+      padding:10px;
+      font-size:20px;
       font-weight:strong;
       border-radius:10px;
     }
@@ -49,7 +50,7 @@
     }
     #del
     {
-      width:95%;
+      width:72%;
     }
     .button
     {
@@ -103,8 +104,8 @@
         <input type="button" value="/" onclick="calc.display.value+='/'">
         <input type="button" value="%" onclick="calc.display.value+='%'">
         <input type="button" value="." onclick="calc.display.value+='.'">
-        <input type="button" value="=" onclick="calc.display.value =eval(calc.display.value)">
         <br><br>
+        <input type="button" value="=" onclick="calc.display.value =eval(calc.display.value)">
         <input type="reset" value="DELETE" onclick="calc.display.value ''" id="del">
       </form>
     </div>
@@ -115,3 +116,4 @@
 </div>
 </body>
 </html>
+
