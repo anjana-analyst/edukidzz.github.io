@@ -142,13 +142,13 @@ function test_input($data) {
         
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <label for="name">NAME</label>
-    <input type="text" id="name"  placeholder="Enter your name"><br><br>
+    <input type="text" id="name"  name="name" placeholder="Enter your name"><br><br>
     <label for="mail">EMAIL ID</label>
-    <input type="email" id="mail" placeholder="xyz@gmail.com"><br>
+    <input type="email" id="mail" name="emailid" placeholder="xyz@gmail.com"><br>
     </form>
     <p>ENTER YOUR COMMENTS HERE</p>
     <label for="comments"></label>
-    <textarea type="text" id="comments"  placeholder="Enter your comments" rows="6" cols="35"></textarea><br>
+    <textarea type="text" id="comments" name="comments" placeholder="Enter your comments" rows="6" cols="35"></textarea><br>
      <p id="para">
          RATING
      </p>
